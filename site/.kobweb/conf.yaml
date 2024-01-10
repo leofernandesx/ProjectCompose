@@ -1,0 +1,14 @@
+site:
+  title: "ProjectCompose"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/dist/js/developmentExecutable/projectcompose.js"
+      api: "build/libs/projectcompose.jar"
+    prod:
+      script: "build/dist/js/productionExecutable/projectcompose.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
